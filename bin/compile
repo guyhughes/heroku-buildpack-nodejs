@@ -163,3 +163,7 @@ summarize_build | output "$LOG_FILE"
 
 warn_no_start "$LOG_FILE"
 warn_unmet_dep "$LOG_FILE"
+
+. "$BP_DIR/export"
+
+gulp build --env prod
